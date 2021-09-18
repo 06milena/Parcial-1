@@ -1,5 +1,7 @@
-from config.db import DB
-from usuarios.crear_usuario import crearUsuario
+
+from usuarios.crear_usuario import crear
+
+
 
 
 def menuPrincipal():
@@ -15,9 +17,7 @@ def menuPrincipal():
         opcion = int(input('SELECCIONE UNA OPCION: '))
 
         if opcion==1:
-            nombre = input('Ingrese el nombre del contacto: ')
-            email = input('Ingrese el correo: ')
-            contrasena = input('Ingrese la contraseña: ')
+            crear()
         elif opcion==2:
             email = input('Ingrese el correo: ')
             contrasena = input('Ingrese la contraseña: ')
