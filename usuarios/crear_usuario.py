@@ -11,7 +11,7 @@ def crearUsuario(nombre, email, contrasena):
           contrasena,
         ))
       DB.commit()
-      print ("Registro Grabado  Correctamente")
+      print ("Registro Correctamente")
       cursor.close()
     
 
